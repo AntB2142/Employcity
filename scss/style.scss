@@ -1,0 +1,30 @@
+@import './fonts';
+@import './variables';
+@import './blocks/header';
+@import './blocks/about';
+@import './blocks/order';
+@import './blocks/footer';
+
+.page {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 1240px;
+	padding: 0 30px;
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: none;
+		padding: 0 22px;
+	}
+}
